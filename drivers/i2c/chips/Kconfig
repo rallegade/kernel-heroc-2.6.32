@@ -67,6 +67,13 @@ config SENSORS_BMA150
 	depends on I2C
 	help
 	 BMA150 G-sensor Driver implemented by HTC.
+
+config MICROP_I2C
+	tristate "MICROP Driver"
+	depends on I2C
+	help
+	  HTC Microp-P support.
+
 config SENSORS_PCA963X
 	tristate "Philips PCA963X 4-bit I2C-bus LED"
 	depends on I2C && EXPERIMENTAL

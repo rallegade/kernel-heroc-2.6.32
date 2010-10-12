@@ -117,6 +117,8 @@ obj-$(CONFIG_MACH_BUZZ) += board-buzz.o board-buzz-panel.o board-buzz-keypad.o b
 obj-$(CONFIG_MACH_BUZZ) += board-buzz-rfkill.o board-buzz-mmc.o board-buzz-wifi.o
 obj-$(CONFIG_MACH_BEE) += board-bee.o board-bee-panel.o board-bee-keypad.o board-bee-microp.o
 obj-$(CONFIG_MACH_BEE) += board-bee-rfkill.o board-bee-mmc.o board-bee-wifi.o
+obj-$(CONFIG_MACH_BAHAMAS) += board-bahamas.o board-click-panel.o board-bahamas-keypad.o
+obj-$(CONFIG_MACH_BAHAMAS) += board-bahamas-mmc.o board-bahamas-rfkill.o board-bahamas-wifi.o
 
 # MSM7227 boards
 obj-$(CONFIG_MACH_LEGEND) += board-legend-rfkill.o
@@ -168,6 +170,10 @@ obj-$(CONFIG_HTC_HEADSET_H2W) += htc_headset_h2w.o
 obj-$(CONFIG_HTC_HEADSET_GPIO) += htc_headset_gpio.o
 obj-$(CONFIG_HTC_HEADSET_MICROP) += htc_headset_microp.o
 obj-$(CONFIG_HTC_HEADSET_PMIC) += htc_headset_pmic.o
+
+obj-$(CONFIG_HTC_HEADSET_V1) += htc_headset_v1.o
+obj-$(CONFIG_HTC_35MM_REMOTE_V1) += htc_35mm_remote_v1.o
+obj-$(CONFIG_HTC_AUDIOJACK_V1) += htc_audio_jack_v1.o
 
 obj-$(CONFIG_MACH_MAHIMAHI) += board-mahimahi-tpa2018d1.o
 obj-$(CONFIG_MACH_MAHIMAHI) += board-mahimahi-smb329.o
