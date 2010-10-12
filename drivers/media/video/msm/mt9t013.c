@@ -1483,23 +1483,3 @@ static int mt9t013_sensor_probe(const struct msm_camera_sensor_info *info,
 probe_done:
 	return rc;
 }
-
-static int __mt9t013_probe(struct platform_device *pdev)
-{
-	return msm_camera_drv_start(pdev, mt9t013_sensor_probe);
-}
-
-static struct platform_driver msm_camera_driver = {
-	.probe = __mt9t013_probe,
-	.driver = {
-		   .name = "msm_camera_mt9t013",
-		   .owner = THIS_MODULE,
-		   },
-};
-
-static int __init mt9t013_init(void)
-{
-	return platform_driver_register(&msm_camera_driver);
-}
-
-module_init(mt9t013_init);
